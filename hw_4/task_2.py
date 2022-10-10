@@ -12,15 +12,9 @@ def create_set(size, min_value, max_value):
 
 def form_list_non_repeating(array):
     non_repeat = []
-    for k in range(len(array)):
-        num = array[k]
-        non_repeat.append(num)
     for i in range(len(array)):
-        for j in range(len(non_repeat)):
-            if j in array:
-                continue
-            else:
-                non_repeat.pop()
+        if array[i] not in non_repeat:
+            non_repeat.append(array[i])
     return non_repeat
     
 
