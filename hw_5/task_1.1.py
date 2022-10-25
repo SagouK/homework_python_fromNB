@@ -23,7 +23,7 @@ print(f'Игрок {player} играет против робота Аркади�
 
 amount_candies = int(input('Введите количество конфет: '))
 
-player_turn = 2 #random.randint(1,2)
+player_turn = random.randint(1,2)
 
 player_candies_counter = 0
 robot_candies_counter = 0
